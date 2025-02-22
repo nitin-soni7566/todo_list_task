@@ -1,0 +1,200 @@
+{
+    "info": {
+        "_postman_id": "90bee23c-e8e2-4000-b148-cbbc2d1cb582",
+        "name": "Todo list",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "User",
+            "item": [
+                {
+                    "name": "Get All users",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:5000/user",
+                            "path": [
+                                "user"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "5000"
+                        }
+                    }
+                },
+                {
+                    "name": "Add user",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:5000/user?name=nitin soni&email=test@gmail.com",
+                            "query": [
+                                {
+                                    "key": "name",
+                                    "value": "nitin soni"
+                                },
+                                {
+                                    "key": "email",
+                                    "value": "test@gmail.com"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "user"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "5000"
+                        }
+                    }
+                },
+                {
+                    "name": "Get user by id",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:5000/user?user_id=1",
+                            "query": [
+                                {
+                                    "key": "user_id",
+                                    "value": "1"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "user"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "5000"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Todo Task",
+            "item": [
+                {
+                    "name": "Get tasks",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:5000/todo?user_id=1",
+                            "query": [
+                                {
+                                    "key": "user_id",
+                                    "value": "1"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "todo"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "5000"
+                        }
+                    }
+                },
+                {
+                    "name": "Add task",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:5000/todo?user_id=1&title=have to complete task ",
+                            "query": [
+                                {
+                                    "key": "user_id",
+                                    "value": "1"
+                                },
+                                {
+                                    "key": "title",
+                                    "value": "have to complete task "
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "todo"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "5000"
+                        }
+                    }
+                },
+                {
+                    "name": "Delete task",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://127.0.0.1:5000/todo?todo_id=1",
+                            "query": [
+                                {
+                                    "key": "todo_id",
+                                    "value": "1"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "todo"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "5000"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "todo home",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:5000",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "5000"
+                }
+            }
+        }
+    ]
+}
