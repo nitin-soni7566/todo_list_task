@@ -26,7 +26,7 @@ poetry install
 
 3. **Run the application**  
 ```sh
-pythom -m src.run
+python -m src.run
 ```
 
 ---
