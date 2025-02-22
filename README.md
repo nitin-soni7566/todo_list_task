@@ -23,8 +23,13 @@ pip install poetry
 poetry install
 ```
 
+3. **Create a .env file and add your database URL:**  
+```sh
+DATABASE_URL="your db url"
+```
 
-3. **Run the application**  
+
+4. **Run the application**  
 ```sh
 python -m src.run
 ```
