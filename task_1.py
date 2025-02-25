@@ -3,7 +3,7 @@ def string_to_dict(input_string: str) -> dict:
     This function takes a string and returns a dictionary
     where words are keys and their lengths are values.
     """
-    result = {}  # Should be a dictionary instead of a list
+    result = {}
     punctuation = ".!?,:/"
 
     words = input_string.split()
